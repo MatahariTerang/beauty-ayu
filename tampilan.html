@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang Di Ayu's Skincare Shop</h1>
+    </header>
+    
+    <section id="packages">
+        <h2>Paket yang Tersedia</h2>
+        <ul>
+            <li>Paket 1: Cleanser, Toner, Moisturizer - 200k</li>
+            <li>Paket 2: Serum, Night Cream, Sunscreen - 400k</li>
+            <li>Paket 3: Exfoliator, Mask, Eye Cream - 600k</li>
+        </ul>
+    </section>
+    
+    <section id="order-form">
+        <h2>masukan data diri anda</h2>
+        <form id="orderForm" action="order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder=" masukan Nama anda"required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder=" masukan Email anda "required><br><br>
+            
+            <label for="package">Pilih Paket:</label>
+            <select id="package" name="package" required >
+                <option value="Paket 1 - 200k">Paket 1</option>
+                <option value="Paket 2 - 400k">Paket 2</option>
+                <option value="Paket 3 - 600k">Paket 3</option>
+            </select><br>
+            <label for="Alamat">Alamat</label>
+            <textarea name="Alamat" rows="10" cols="30" placeholder=" masukan Alamat Lengkap anda"></textarea><br>
+            
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
